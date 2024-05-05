@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Básica</title>
+</head>
+<body>
+    <header>
+        <img src="pngwing.com.png" width="120" height="120">
+    </header>
+    <div id="header-btn">
+        <button class="link-btn" id="sobre">Sobre</button>
+        <button class="link-btn" id="clipes">Clipes</button>
+        <button class="link-btn" id="elenco">Elenco</button>
+        <button class="link-btn" id="player">Player</button>
+        <button class="link-btn" id="expandir">Expandir</button>
+    </div>
+    <div id="sobre-div">
+        <div id="conteudo-box">
+            <div>
+                <img src="queen-people.jpg" width="400" height="400">  
+            </div>
+            <div id="elenco-text">
+                <img src="text-about.png">
+             </div>
+        </div>
+    </div>
+    <div id="player-div">
+        <h1 id="titulo-div-player" style="font-family: 'Roboto Condensed'; color: rgb(0, 0, 0)">Player Musical</h1>
+            <div id="music-player">
+                <form id="formulario-musica">
+                    <label for="opcoes">Escolha um Hit</label>
+                    <select name="opcoes" id="opcoes">
+                        <option value="bh">Bohemian Rhapsody</option>
+                        <option value="iwt">I want To Break Free</option>
+                        <option value="wwr">We Will Rock You</option>
+                        <option value="dsm">Dont Stop Me Now</option>
+                    </select>
+                    <button type="submit" id="send">Tocar!</button>
+                </form>
+                <img id="musica-imagem" src="discografia/placeholder.jpg" width="128" height="128" style="border-radius: 50%; border: 1px white solid;">
+                <audio id="audio">
+                    <source src="musicas/BH.mp3" type="audio/mp3">
+                </audio>
+                <input type="range" min="0" value="0" id="slider">
+                <div id="botoes-musica">
+                    <button class="botoes-musica-classe" id="tocar"><img src="img-btn-musica/play.png" class="imagem-musica-bt"></button>
+                    <button class="botoes-musica-classe" id="pause"><img src="img-btn-musica/pause.png" class="imagem-musica-bt"></button>
+                    <button class="botoes-musica-classe" id="volume-up"><img src="img-btn-musica/volume-up.png" class="imagem-musica-bt"></button>
+                    <button class="botoes-musica-classe" id="volume-down"><img src="img-btn-musica/volume-dw.png" class="imagem-musica-bt"></button>
+                    <button class="botoes-musica-classe" id="mute"><img src="img-btn-musica/mute.png" class="imagem-musica-bt"></button>
+                </div>
+        </div>
+    </div>
+    <div id="elenco-freddie-div" class="elenco-div">
+        <h1 style="font-family: 'Roboto Condensed'; color:white;">Elenco</h1>
+        <div class="elenco-classe">
+            <img src="elenco/freddie.png" width="302" height="468">
+            <img src="elenco/freddie-text.png" width="302" height="468">
+        </div>
+    </div>
+    <div id="elenco-brian-div" class="elenco-div">
+        <div class="elenco-classe">
+            <img src="elenco/brian-text.png" width="302" height="468">
+            <img src="elenco/brian.jpg" width="302" height="468">
+        </div>
+    </div>
+    <div id="elenco-john-div" class="elenco-div">
+        <div class="elenco-classe">
+            <img src="elenco/john.jpg" width="302" height="468">
+            <img src="elenco/john-text.png" width="302" height="468">
+        </div>
+    </div>
+    <div id="elenco-roger-div" class="elenco-div">
+        <div class="elenco-classe">
+            <img src="elenco/roger-text.png" width="302" height="468">
+            <img src="elenco/roger.jpg" width="302" height="468">
+        </div>
+    </div>
+    <div id="div-clipes">
+    <h1 style="font-family: 'roboto condensed'; text-align: center; margin:0; background-color: rgb(255, 255, 255); padding: 20px; color: rgb(255, 0, 0);">Clipes</H1>
+    <div id="video-div">
+        <div id="seletor-clip">
+            <h2 style="font-family: 'roboto condensed'; color:rgb(188, 0, 0);">Selecione o clipe</h2>
+            <button id="bh.mp4" class="video-select">Bohemian Rhapsody</button>
+            <button id="ds.mp4" class="video-select">Dont stop me now</button>
+            <button id="ww.mp4" class="video-select">We will rock you</button>
+            <button id="iw.mp4" class="video-select">I want to break free</button>
+        </div>
+        <div id="video-div-child">
+            <video id="video" poster="cover.png">
+                <source  type=“video/mp4”>
+               </video>
+               <div id="btn-controles">
+                    <button id="play-video" class="video-btn"><img src="img-btn-musica/play.png" width="32" height="32"></button>
+                    <button id="pause-video" class="video-btn"><img src="img-btn-musica/pause.png" width="32" height="32"></button>
+                    <button id="audiomais-video" class="video-btn"><img src="img-btn-musica/volume-up.png" width="32" height="32"></button>
+                    <button id="audiomenos-video" class="video-btn"><img src="img-btn-musica/volume-dw.png" width="32" height="32"></button>
+                    <button id="mute-video" class="video-btn"><img src="img-btn-musica/mute.png" width="32" height="32"></button>
+               </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <h2>Site Experimental Desenvolvido Para Fins De Aprendizado</h2>
+    <p>Aluno Vinicius Michel Rosa - Curso de informatica para internet - INFO IV - 2024</p>
+    <img src="info4.png" width="100" height="80">
+</footer>
+</body>
+<script src="script.js"></script>    
+</html>

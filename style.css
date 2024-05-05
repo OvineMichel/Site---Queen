@@ -1,0 +1,328 @@
+
+body{
+    margin: 0;
+    height: 100%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+#header-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-image: linear-gradient(to right, rgb(1, 1, 1),rgb(11, 11, 11),rgb(22, 22, 22),rgb(33, 33, 33));
+    padding: 10px;
+    padding-bottom:15px;
+    border-top: 3px solid rgb(75, 75, 75);
+}
+
+.text-title{
+    font-family: helvetica;
+    color: white;
+    font-weight: bolder;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+#logo{
+    padding-right: 20px;
+}
+
+.link-btn{
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: helvetica;
+    padding: 4px;
+    box-shadow: 0px 4px rgb(148, 148, 148);
+}
+
+.link-btn:hover{
+    transition: 1s; 
+    cursor: pointer;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.link-btn:not(:hover){
+    transition: 1s; 
+    cursor: pointer;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.link-btn:active{
+    transition: 120ms; 
+    cursor: pointer;
+    transform: translateY(4px);
+    box-shadow: 0px 1px rgb(98, 98, 98);
+}
+
+#sobre-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    background-image: url(queen-content-background.png);
+    background-size: 100% 100%;
+}
+#conteudo-box{
+    display: flex;
+    background-image: linear-gradient(to right, rgb(57, 57, 57),rgb(0, 0, 0),rgb(0, 0, 0),rgb(59, 59, 59));
+    padding: 7px;
+    border-radius: 8px;
+}
+
+
+#player-div{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(218, 218, 218);
+    padding: 20px;
+    height: 800px;
+}
+
+
+#music-player{
+    border: 2px solid white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(79, 79, 79), rgb(158, 158, 158));
+    padding: 20px;
+    gap: 20px;
+}
+
+#formulario-musica{
+    font-family: 'Roboto condensed';
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+#opcoes{
+    border: none;
+    border-radius: 4px;
+    font-family: 'Roboto Condensed';
+    background-color: rgb(173, 3, 3);
+    color: rgb(255, 255, 255);
+}
+
+#send{
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(173, 3, 3);
+    color: rgb(255, 255, 255);
+    font-family: helvetica;
+    padding: 4px;
+    box-shadow: 0px 4px rgb(205, 205, 205);
+}
+
+#send:hover{
+    transition: 1s; 
+    cursor: pointer;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+#send:not(:hover){
+    transition: 1s; 
+    cursor: pointer;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+#send:active{
+    transition: 120ms; 
+    cursor: pointer;
+    transform: translateY(4px);
+    box-shadow: 0px 1px rgb(98, 98, 98);
+}
+
+#botoes-musica{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid white;
+    background-color: rgb(194, 194, 194);
+    padding: 10px;
+    border-radius: 4px;
+    gap: 10px;
+}
+.botoes-musica-classe{
+    background-color: rgb(160, 41, 41);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 4px rgb(255, 255, 255);
+}
+
+.botoes-musica-classe:hover{
+    background-color: rgb(255, 255, 255);
+    transition: 500ms;
+    cursor: pointer;
+    transform: translateY(2px);
+    box-shadow: 2px 2px black;
+}
+
+.botoes-musica-classe:not(:hover){
+    transition: 500ms;
+    cursor: pointer;
+    box-shadow: 2px 4px black;
+}
+.imagem-musica-bt{
+    width: 21px;
+    height: 21px;
+    filter: drop-shadow(0px 0px 2px black);
+}
+
+.elenco-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.elenco-classe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    box-shadow: 10px 10px rgb(255, 255, 255);
+}
+
+#elenco-freddie-div{
+    background-color: rgb(29, 89, 110);
+}
+
+
+#elenco-brian-div{
+    background-color: rgb(85, 131, 39);
+}
+
+
+
+#elenco-john-div{
+    background-color: rgb(188, 185, 34);
+}
+
+#elenco-roger-div{
+    background-color: rgb(92, 31, 100);
+}
+
+#video-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    background-color: rgb(172, 0, 0);
+    gap: 10px;
+}
+
+#video-div-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#video{
+    border-radius: 10px;
+}
+
+#btn-controles{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-grow: 1;
+    padding-top: 10px;
+    width: 100%;
+    gap: 10px;
+}
+.video-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: rgb(187, 9, 9);
+    border-radius: 8px;
+    padding: 7px;
+    cursor: pointer;
+    box-shadow: 3px 3px black;
+}
+
+#seletor-clip{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 6px;
+    height: 420px;
+}
+
+.video-select{
+    border: none;
+    border-left: 3px solid rgb(19, 135, 170);
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    font-family: 'roboto condensed';
+    padding: 4px;
+    width: 120px;
+    cursor: pointer;
+    box-shadow: 3px 3px 4px rgb(55, 55, 55);
+    background-color: rgb(169, 0, 0);
+    color: white;
+}
+
+.video-select:hover{
+    background-color: rgb(80, 0, 0);
+    transition: 500ms;
+    width: 140px;
+}
+
+.video-select:not(:hover){ 
+    transition: 500ms;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: 'roboto condensed';
+}
+
+footer > p{
+  color: rgb(77, 27, 123);
+  text-shadow: 0 0 4px rgb(100, 23, 129);
+}
